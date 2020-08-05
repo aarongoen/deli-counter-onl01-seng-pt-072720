@@ -9,8 +9,8 @@ def line(katz_deli)
     katz_deli.each_with_index do |name, index| 
     waiting_message += "#{index+1}. #{name}."
     end
+  puts waiting_message
   end 
-puts waiting_message
 end
 
 def take_a_number(katz_deli, end_of_line_name)
