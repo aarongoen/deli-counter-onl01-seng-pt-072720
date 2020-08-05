@@ -2,13 +2,15 @@
 katz_deli = ["Ada", "Grace", "Kent"]
 
 def line(katz_deli)
+  waiting_message = "The line is currently:"
   if katz_deli.length < 1 
     puts "The line is currently empty."
   else
     katz_deli.each_with_index do |name, index| 
-    puts "The line is currently: #{index+1}. #{name}."
+    waiting_message += "#{index+1}. #{name}."
     end
   end 
+puts waiting_message
 end
 
 def take_a_number(katz_deli, end_of_line_name)
