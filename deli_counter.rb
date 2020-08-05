@@ -6,14 +6,13 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each_with_index do |name, index| 
-    puts "The line is currently: #{index+1}. #{name}
+    puts "The line is currently: #{index+1}. #{name}."
     end
   end 
 end
 
 def take_a_number(katz_deli, end_of_line_name)
   katz_deli << end_of_line_name
-  puts "Welcome
   puts "Welcome, #{end_of_line_name}. You are number #{katz_deli.length+1} in line."
 end 
 
